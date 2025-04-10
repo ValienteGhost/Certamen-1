@@ -5,9 +5,17 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: rgb(var(--bs-tertiary-color-rgb));
+  color: #333; /* Gris oscuro */
+  background-color: #f4f4f9; /* Fondo claro */
+  font-family: 'Roboto', sans-serif; /* Fuente principal */
 }
 
+/* TITLES AND HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Fuente secundaria para títulos */
+  font-weight: bold;
+  color: #007bff; /* Azul tecnológico */
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -22,9 +30,21 @@ body {
   z-index: 10;
 }
 
+.carousel-caption h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #007bff; /* Azul tecnológico */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+.carousel-caption p {
+  color: #ffffff; /* Blanco para contraste */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+  background-color: #e9ecef; /* Fondo gris claro */
 }
 
 
@@ -36,12 +56,29 @@ body {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
+.marketing .col-lg-4 h2 {
+  color: #007bff; /* Azul tecnológico */
+}
+
 /* rtl:begin:ignore */
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
+  color: #555; /* Gris medio */
 }
 /* rtl:end:ignore */
+
+.btn-secondary {
+  background-color: #007bff; /* Azul tecnológico */
+  border-color: #0056b3;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #0056b3;
+  border-color: #003f7f;
+}
 
 
 /* Featurettes
@@ -49,15 +86,63 @@ body {
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  border-color: #007bff; /* Azul tecnológico */
 }
 
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
 .featurette-heading {
   letter-spacing: -.05rem;
+  color: #007bff; /* Azul tecnológico */
+  font-weight: bold;
+}
+/* rtl:end:remove */
+
+
+/* GALLERY CARDS */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* rtl:end:remove */
+.card img {
+  object-fit: cover;
+  height: 225px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card-body .btn-group .btn {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.card-body .btn-group .btn-outline-secondary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.card-body .btn-group .btn-outline-secondary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
