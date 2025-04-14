@@ -1,0 +1,209 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #333; 
+    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    color: #007bff;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.icon-link > .bi {
+    width: .75em;
+    height: .75em;
+}
+
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-caption h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #007bff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.carousel-caption p {
+    color: #ffffff; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-item {
+    height: 32rem;
+    background-color: #e9ecef; 
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+}
+
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing .col-lg-4 h2 {
+    color: #007bff; 
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+    color: #555; 
+}
+
+.btn-secondary {
+    background-color: #007bff; 
+    border-color: #0056b3;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+    border-color: #003f7f;
+}
+
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    transform: rotate(30deg);
+}
+
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+}
+.product-device-2::before {
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.featurette-divider {
+    margin: 5rem 0; 
+    border-color: #007bff; 
+}
+
+.featurette-heading {
+    letter-spacing: -.05rem;
+    color: #007bff; 
+    font-weight: bold;
+}
+
+.flex-equal > * {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+    flex: 1;
+    }
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    object-fit: cover;
+    height: 225px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card-body .btn-group .btn {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card-body .btn-group .btn-outline-secondary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.card-body .btn-group .btn-outline-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+@media (min-width: 40em) {
+.carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    }
+
+.featurette-heading {
+    font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+.featurette-heading {
+    margin-top: 7rem;
+    }
+}
